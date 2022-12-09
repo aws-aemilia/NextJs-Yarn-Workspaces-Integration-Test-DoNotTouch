@@ -1,0 +1,17 @@
+version: 1
+applications:
+  - appRoot: packages/web-app
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - cd ../../
+            - yarn incall
+        build:
+          commands:
+            - yarn workspace @project/web-app build
+      artifacts:
+        # IMPORTANT - Please verify your build output directory
+        baseDirectory: .next
+        files:
+          - '**/*'
