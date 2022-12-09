@@ -6,7 +6,7 @@ applications:
         preBuild:
           commands:
             - cd ../../
-            - yarn incall
+            - yarn install
         build:
           commands:
             - yarn workspace @project/web-app build
