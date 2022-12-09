@@ -8,8 +8,7 @@ applications:
             - yarn install
         build:
           commands:
-            - yarn workspace @project/web-app build
-      artifacts:
+            - yarn build
         baseDirectory: .next
         files:
           - '**/*'
