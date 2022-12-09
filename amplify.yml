@@ -9,9 +9,9 @@ applications:
             - yarn install
         build:
           commands:
+            - cd packages/web-app
             - yarn workspace @project/web-app build
       artifacts:
-        # IMPORTANT - Please verify your build output directory
         baseDirectory: .next
         files:
           - '**/*'
