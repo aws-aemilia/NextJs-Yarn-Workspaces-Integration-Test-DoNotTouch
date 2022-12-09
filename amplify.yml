@@ -8,7 +8,6 @@ applications:
             - yarn install
         build:
           commands:
-            - cd packages/web-app
             - yarn workspace @project/web-app build
       artifacts:
         baseDirectory: .next
