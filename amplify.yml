@@ -2,14 +2,15 @@ version: 1
 applications:
   - appRoot: packages/web-app
     frontend:
+      buildPath: /
       phases:
         preBuild:
           commands:
             - yarn install
         build:
           commands:
-            - yarn build
+            - yarn workspace @project/web-app build
       artifacts:
-        baseDirectory: .next
+        baseDirectory: packages/web-app/.next
         files:
           - '**/*'
