@@ -3,7 +3,7 @@ import React from 'react';
 export function MyLib() {
   return (
     <div>
-      Yarn workspaces
+      monorepo-yarn workspaces
     </div>
   );
 }
